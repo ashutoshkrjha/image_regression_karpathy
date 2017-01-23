@@ -1,10 +1,10 @@
 # image_regression_karpathy
 A Tensorflow implementation of "A neural network paints an image" as seen at http://cs.stanford.edu/people/karpathy/convnetjs/demo/image_regression.html
 
-# How to run the regressor
+#### How to run the regressor
 ~$ python painter.py [filename.jpg]
 
-# Technical Details
+#### Technical Details
 The code implements a 2 hidden layer ANN to regress on the pixel position of a single image to its RGB mapping.
 
 The input is thus has 2 features (x,y values of the pixel location) and the output has 3 features (R,G and B values of the pixel)
@@ -13,7 +13,7 @@ The optimizer used is Adam. This can be changed in line 60 of the code.
 
 The number of hidden layers is kept fixed though. As a further extension to this project, a list of weight,bias and activation tensors can be created to accomodate more hidden layers.
 
-# Interesting Observations
+#### Interesting Observations
 
 In the examples folder, I have included 2 examples that I trained on. One was a picture of Dora The Explorer and other was a logo of Reddit.
 If we observe the painting after 900 epochs, we see that the painting of Dora is starting to look like the original though Reddit is not even close.
